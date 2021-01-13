@@ -32,3 +32,17 @@ const funBus = document.querySelector(".intro img");
 funBus.addEventListener("dblclick", (e) => {
     funBus.style.borderRadius = '50%';
 });
+
+const welcome = document.querySelector('.intro h2');
+
+welcome.addEventListener('copy', () => {
+    welcome.style.color = 'red';
+})
+
+const letGo = document.querySelector('.content-section .text-content');
+
+document.addEventListener('keyup', (e) => {
+   if (e.key === 'Backspace'){
+       letGo.textContent = 'OH GOD YOU DELETED ALL MY TEXT OH MY GOD IT HURTS INSIDE!'
+   }
+})
